@@ -296,7 +296,7 @@ document.addEventListener('click',function(e){
   b.textContent=UI[lang].done;setTimeout(function(){b.textContent=UI[lang].copy},1200)}});
 function boot(c){cfg=c;initFlat();applyTheme();build();}
 fetch('docs.json').then(function(r){if(!r.ok)throw r.status;return r.json()}).then(boot).catch(function(e){
- document.body.innerHTML='<div style="max-width:560px;margin:20vh auto;padding:32px;font-family:system-ui;text-align:center"><h2>Could not load docs.json</h2><p>Serve this folder over HTTP, e.g. <code>php -S localhost:8000 -t doc</code></p></div>';
+ document.body.innerHTML='<div style="max-width:560px;margin:20vh auto;padding:32px;font-family:system-ui;text-align:center"><h2>Could not load docs.json</h2><p>Serve this folder over HTTP, e.g. <code>php -S localhost:8000 -t docs</code></p></div>';
 });
 })();
 </script>

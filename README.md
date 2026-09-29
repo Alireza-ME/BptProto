@@ -4,6 +4,10 @@
 لاگین با شماره، و یک **facade ساده‌ی گروه‌بندی‌شده** برای پیام‌رسانی، مخاطبین،
 کانال‌ها و رویدادهای realtime.
 
+📖 **داک آنلاین:** https://alireza-me.github.io/BptProto/
+
+اجرای داک به‌صورت لوکال: `php -S localhost:8000 -t docs` و سپس http://localhost:8000
+
 ## نصب
 
 ```bash
@@ -258,6 +262,10 @@ src/
   TL/                    # Builder، Reader، Ctors، Peer، Deserializer، Types
   Exception/             # AuthException، FloodWaitException
 tools/                   # gen_methods.php + gen_docs.php + telegram_api.tl (schema)
+docs/                    # داک آنلاین (index.html + docs.json) → GitHub Pages
+  index.html             # سایت داک (fetch docs.json)
+  docs.json              # محتوای داک (دوزبانه fa/en)
+.github/workflows/       # pages.yml → deploy خودکار داک روی GitHub Pages
 database/                # همه read/write اجرایی (git-ignored، chmod 700)
 vendor/                  # خروجی Composer (git-ignored)
 bpt.php                  # مثال ربات realtime پاسخ‌گو (سلام → سلام از BptProto)

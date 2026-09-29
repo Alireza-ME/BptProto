@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /**
  * Generates the "method reference" section of the docs and merges it into
- * doc/docs.json.
+ * docs/docs.json.
  *
  * For every MTProto method in tools/telegram_api.tl it emits, per namespace:
  *   h3    — method name + parameter list
@@ -154,7 +154,7 @@ function main(): void
 {
     $root = dirname(__DIR__);
     $schemaFile = $root . '/tools/telegram_api.tl';
-    $docsFile = $root . '/doc/docs.json';
+    $docsFile = $root . '/docs/docs.json';
     $descFile = $root . '/tools/method_descriptions.php';
 
     $desc = require $descFile;
